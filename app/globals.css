@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* Base colors */
+:root {
+  --background: #f9fafb;
+  --foreground: #111827;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Global body styling */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, Arial, Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth text rendering */
+* {
+  box-sizing: border-box;
+}
+
+/* Better links */
+a {
+  text-decoration: none;
+}
+
+/* Buttons default style upgrade */
+button {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* Inputs styling (important for login/register) */
+input {
+  outline: none;
+  border-radius: 6px;
+}
