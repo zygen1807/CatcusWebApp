@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-// "use client";
+﻿// "use client";
 //
 // import { motion } from "framer-motion";
 //
@@ -17,7 +16,7 @@
 //         transition={{ delay: 0.4 }}
 //         className="text-5xl font-bold"
 //       >
-//         🪵 Premium Furniture Shop
+//         ðŸªµ Premium Furniture Shop
 //       </motion.h1>
 //
 //       <p className="mt-4 text-gray-600 text-lg">
@@ -50,9 +49,9 @@
 //         transition={{ delay: 0.4 }}
 //         className="grid grid-cols-3 gap-6 mt-16 max-w-4xl"
 //       >
-//         <div className="p-4 border rounded">✔ Handmade Quality</div>
-//         <div className="p-4 border rounded">✔ Durable Wood</div>
-//         <div className="p-4 border rounded">✔ Custom Design</div>
+//         <div className="p-4 border rounded">âœ” Handmade Quality</div>
+//         <div className="p-4 border rounded">âœ” Durable Wood</div>
+//         <div className="p-4 border rounded">âœ” Custom Design</div>
 //       </motion.div>
 //     </motion.main>
 //   );
@@ -141,7 +140,7 @@ export default function Page() {
         <div className="relative px-8 py-10">
           <div className="text-center mb-8">
             <div className="mx-auto mb-4 inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-slate-900 text-white shadow-xl shadow-slate-900/10">
-              <span className="text-2xl">🪵</span>
+              <span className="text-2xl">ðŸªµ</span>
             </div>
 
             <h1 className="text-3xl font-semibold tracking-tight text-slate-900">
@@ -237,64 +236,3 @@ export default function Page() {
     </div>
   );
 }
-=======
-"use client";
-
-import { motion } from "framer-motion";
-
-
-export default function Page() {
-  return (
-    <motion.main
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      className="flex flex-col items-center justify-center min-h-screen text-center p-10 bg-gray-50"
-    >
-      <motion.h1
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.4 }}
-        className="text-5xl font-bold"
-      >
-        🪵 Premium Furniture Shop
-      </motion.h1>
-
-      <p className="mt-4 text-gray-600 text-lg">
-        Custom-made wooden furniture for your home and office.
-      </p>
-
-      {/* BUTTONS */}
-      <div className="mt-6 flex gap-4">
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-6 py-3 bg-black text-white rounded"
-        >
-          Shop Now
-        </motion.button>
-
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-6 py-3 border rounded"
-        >
-          Custom Order
-        </motion.button>
-      </div>
-
-      {/* FEATURES */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
-        className="grid grid-cols-3 gap-6 mt-16 max-w-4xl"
-      >
-        <div className="p-4 border rounded">✔ Handmade Quality</div>
-        <div className="p-4 border rounded">✔ Durable Wood</div>
-        <div className="p-4 border rounded">✔ Custom Design</div>
-      </motion.div>
-    </motion.main>
-  );
-}
->>>>>>> bab7634c8c6e5fc1248e5e3d381abd8e455a92d7

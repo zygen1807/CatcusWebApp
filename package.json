@@ -1,22 +1,16 @@
-{
+﻿{
   "name": "furniture-catcus",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-<<<<<<< HEAD
     "dev": "next dev --webpack",
     "build": "next build --webpack",
-=======
-    "dev": "next dev",
-    "build": "next build",
->>>>>>> bab7634c8c6e5fc1248e5e3d381abd8e455a92d7
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.0",
     "framer-motion": "^12.38.0",
-<<<<<<< HEAD
     "jspdf": "^4.2.1",
     "jspdf-autotable": "^5.0.8",
     "lucide-react": "^1.25.0",
@@ -25,13 +19,6 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-icons": "^5.7.0"
-=======
-    "lucide-react": "^1.16.0",
-    "next": "16.2.6",
-    "openai": "^6.42.0",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
->>>>>>> bab7634c8c6e5fc1248e5e3d381abd8e455a92d7
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -40,11 +27,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
-<<<<<<< HEAD
     "file-loader": "^6.2.0",
     "prettier": "^3.9.5",
-=======
->>>>>>> bab7634c8c6e5fc1248e5e3d381abd8e455a92d7
     "tailwindcss": "^4",
     "typescript": "^5"
   }

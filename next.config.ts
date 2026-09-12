@@ -1,7 +1,6 @@
-import type { NextConfig } from "next";
+﻿import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-<<<<<<< HEAD
   serverExternalPackages: ["opencascade.js"],
 
   webpack: (config, { isServer }) => {
@@ -20,9 +19,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-=======
-  /* config options here */
-};
-
-export default nextConfig;
->>>>>>> bab7634c8c6e5fc1248e5e3d381abd8e455a92d7
