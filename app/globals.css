@@ -2,12 +2,17 @@
 
 /* Base colors */
 :root {
+<<<<<<< HEAD
   --background: #f6ead8;
   --foreground: #2b1b14;
   --espresso: #4b2f20;
   --cocoa: #6e4932;
   --caramel: #a06a3e;
   --parchment: #f3cf95;
+=======
+  --background: #f9fafb;
+  --foreground: #111827;
+>>>>>>> bab7634c8c6e5fc1248e5e3d381abd8e455a92d7
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,7 +26,11 @@
 body {
   background: var(--background);
   color: var(--foreground);
+<<<<<<< HEAD
   font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+=======
+  font-family: ui-sans-serif, system-ui, -apple-system, Arial, Helvetica;
+>>>>>>> bab7634c8c6e5fc1248e5e3d381abd8e455a92d7
   margin: 0;
   padding: 0;
 }
@@ -50,6 +59,7 @@ button:hover {
 input {
   outline: none;
   border-radius: 6px;
+<<<<<<< HEAD
 }
 
 .dashboard-card,
@@ -118,4 +128,6 @@ input {
 .project-modal-theme .bg-gray-50,
 .project-modal-theme .bg-gray-100 {
   background-color: #fff4df !important;
+=======
+>>>>>>> bab7634c8c6e5fc1248e5e3d381abd8e455a92d7
 }

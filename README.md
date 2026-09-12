@@ -24,6 +24,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 To learn more about Next.js, take a look at the following resources:
 
+<<<<<<< HEAD
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## User Data Isolation
@@ -37,9 +38,20 @@ Rows created before this migration have a `NULL` `user_id` because Supabase cann
 which account originally created them. Assign those rows to the correct user's UUID in
 the SQL Editor before using them again; unassigned legacy rows remain hidden by design.
 
+=======
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+>>>>>>> bab7634c8c6e5fc1248e5e3d381abd8e455a92d7
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<<<<<<< HEAD
 "# CatcusWebApp"
+=======
+"# CatcusWebApp" 
+>>>>>>> bab7634c8c6e5fc1248e5e3d381abd8e455a92d7

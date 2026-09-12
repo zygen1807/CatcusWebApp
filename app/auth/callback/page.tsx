@@ -8,6 +8,7 @@ export default function CallbackPage() {
   const router = useRouter();
 
   useEffect(() => {
+<<<<<<< HEAD
     const handleCallback = async () => {
       try {
         // Get current session first
@@ -99,3 +100,37 @@ export default function CallbackPage() {
     </div>
   );
 }
+=======
+    const checkUser = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+
+      if (!user) {
+        router.push("/");
+        return;
+      }
+
+      const { data } = await supabase
+        .from("profiles")
+        .select("role")
+        .eq("email", user.email)
+        .single();
+
+      if (data?.role === "master") {
+        router.push("/dashboard/dashboard");
+      } else {
+        alert("Not authorized as Master Carpenter");
+        await supabase.auth.signOut();
+        router.push("/");
+      }
+    };
+
+    checkUser();
+  }, []);
+
+  return (
+    <div className="h-screen flex items-center justify-center">
+      Logging in...
+    </div>
+  );
+}
+>>>>>>> bab7634c8c6e5fc1248e5e3d381abd8e455a92d7
