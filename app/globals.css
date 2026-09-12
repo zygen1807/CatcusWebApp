@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+/* Base colors */
+:root {
+  --background: #f6ead8;
+  --foreground: #2b1b14;
+  --espresso: #4b2f20;
+  --cocoa: #6e4932;
+  --caramel: #a06a3e;
+  --parchment: #f3cf95;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Global body styling */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth text rendering */
+* {
+  box-sizing: border-box;
+}
+
+/* Better links */
+a {
+  text-decoration: none;
+}
+
+/* Buttons default style upgrade */
+button {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* Inputs styling (important for login/register) */
+input {
+  outline: none;
+  border-radius: 6px;
+}
+
+.dashboard-card,
+.dashboard-panel {
+  border: 1px solid #ead3b6;
+  background: rgba(255, 250, 240, 0.82);
+  box-shadow: 0 16px 36px rgba(94, 55, 28, 0.07);
+}
+
+.dashboard-card {
+  min-height: 205px;
+  border-radius: 24px;
+  padding: 22px;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 42px rgba(94, 55, 28, 0.12);
+}
+
+.dashboard-panel {
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.price-list-theme .text-slate-900,
+.price-list-theme .text-slate-700,
+.price-list-theme .text-slate-600,
+.price-list-theme .text-slate-500 {
+  color: #6e4932 !important;
+}
+
+.price-list-theme .border-amber-200,
+.price-list-theme .border-amber-300,
+.price-list-theme .border-emerald-200,
+.price-list-theme .border-emerald-300 {
+  border-color: #dfc7ab !important;
+}
+
+.price-list-theme .bg-amber-50,
+.price-list-theme .bg-amber-100,
+.price-list-theme .bg-emerald-50,
+.price-list-theme .bg-slate-100 {
+  background-color: #fff4df !important;
+}
+
+.price-list-theme .text-amber-900,
+.price-list-theme .text-emerald-700,
+.price-list-theme .text-emerald-900 {
+  color: #4b2f20 !important;
+}
+
+.project-modal-theme .text-gray-800,
+.project-modal-theme .text-gray-700,
+.project-modal-theme .text-gray-600,
+.project-modal-theme .text-gray-500,
+.project-modal-theme .text-gray-400 {
+  color: #6e4932 !important;
+}
+
+.project-modal-theme .border-gray-200 {
+  border-color: #dfc7ab !important;
+}
+
+.project-modal-theme .bg-gray-50,
+.project-modal-theme .bg-gray-100 {
+  background-color: #fff4df !important;
+}
